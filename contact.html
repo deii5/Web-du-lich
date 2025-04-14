@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="./assets/css/news.css">
+
+    <link rel="icon" type="image/x-icon" href="./assets/favicon/icon-beach.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/VT/font/css2.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+
+    <title>Liên hệ | Hoàng Nam Tourist</title>
+
+</head>
+
+<body>
+    <div id="root">
+        <header class="header">
+            <nav class="navbar navbar-expand-lg fixed-top"
+                style="position: fixed; top: 0; right: 0; left: 0; background-color: white;">
+                <div class="container-fluid">
+                    <a class="navbar-brand logo" id="logoheader" href="./index.html"><img src="assets/main/logo.png"
+                            alt="logo" width="150" height="50" loading="lazy" /></a>
+                    <div class="navbar-collapse offcanvas-collapse left" id="main_nav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown me-4"><a class="nav-link" href="./index.html"
+                                    role="button">Trang chủ</a></li>
+                            <li class="nav-item dropdown has-megamenu">
+                                <a class="nav-link dropdown-toggle travel-menu" href="#" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Du lịch</a>
+                                <div class="dropdown-menu megamenu">
+                                    <div class="row py-lg-5">
+                                        <div class="col-2 text-center">
+                                            <ul class="list-unstyled menu-tab-items">
+                                                <li class="active" value="1">Du lịch trong nước</li>
+                                                <li class="" value="2">Du lịch nước ngoài</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-10 col-md-12 mx-auto">
+                                            <div class="col-lg-9 col-md-9 menu-tab-panels">
+                                                <div class="row g-3 active text-center">
+                                                    <div class="col-lg-3 col-6">
+                                                        <div class="col-megamenu">
+                                                            <h6 class="title fw-bold text-uppercase"><a>Tour Miền
+                                                                    Bắc</a></h6>
+                                                            <ul class="list-unstyled">
+                                                                <li><a href="./tour_list.html">Du lịch Hà Nội</a></li>
+                                                                <li><a href="./tour_list.html">Du lịch Hạ Long</a></li>
+                                                                <li><a href="./tour_list.html">Du lịch Bắc Ninh</a></li>
+                                                                <li><a href="./tour_list.html">Du lịch Phú Thọ</a></li>
+                                                                <li><a href="./tour_list.html">Du lịch Ninh Bình</a>
+                                                                </li>
+                                                                <li><a class="fw-bold">Xem tất cả</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+                                                        <div class="col-megamenu">
+                                                            <h6 class="title fw-bold text-uppercase"><a>Tour Miền
+                                                                    Trung</a></h6>
+                                                            <ul class="list-unstyled">
+                                                                <li><a href="./tour_list.html">Du lịch Huế</a></li>
+                                                                <li><a href="./tour_list.html">Du lịch Quảng Bình</a>
+                                                                </li>
+                                                                <li><a href="./tour_list.html">Du lịch Quảng Trị</a>
+                                                                </li>
+                                                                <li><a href="./tour_list.html">Du lịch Quảng Nam</a>
+                                                                </li>
+                                                                <li><a href="./tour_list.html">Du lịch Đà Nẵng</a></li>
+                                                                <li><a href="./tour_list.html">Du lịch Thanh Hóa</a>
+                                                                </li>
+
+                                                                <li><a class="fw-bold">Xem tất cả</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+                                                        <div class="col-megamenu">
+                                                            <h6 class="title fw-bold text-uppercase"><a>Tour Miền Tây
+                                                                    Nam Bộ</a></h6>
+                                                            <ul class="list-unstyled">
+                                                                <li><a href="./tour_list.html">Du lịch Phú Quốc</a></li>
+                                                                <li><a href="./tour_list.html">Du lịch Tiền Giang</a>
+                                                                </li>
+                                                                <li><a href="./tour_list.html">Du lịch Cần Thơ</a></li>
+                                                                <li><a href="./tour_list.html">Du lịch Vĩnh Long</a>
+                                                                </li>
+                                                                <li><a href="./tour_list.html">Du lịch Sóc Trăng</a>
+                                                                </li>
+                                                                <li><a class="fw-bold">Xem tất cả</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+                                                        <div class="col-megamenu">
+                                                            <h6 class="title fw-bold text-uppercase"><a>Tour Miền Đông
+                                                                    Nam Bộ</a></h6>
+                                                            <ul class="list-unstyled">
+                                                                <li><a href="./tour_list.html">Du lịch Đồng Nai</a></li>
+                                                                <li><a href="./tour_list.html">Du lịch Bà Rịa - Vũng
+                                                                        Tàu</a></li>
+                                                                <li><a href="./tour_list.html">Du lịch TP. Hồ Chí
+                                                                        Minh</a></li>
+                                                                <li><a href="./tour_list.html">Du lịch Côn Đảo</a></li>
+                                                                <li><a href="./tour_list.html">Du lịch Tây Ninh</a></li>
+                                                                <li><a href="./tour_list.html" class="fw-bold">Xem tất
+                                                                        cả</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown me-4">
+                                <a class="nav-link dropdown-toggle transport-menu" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Vận chuyển</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="./transfer.html" target="_blank">Thuê xe</a></li>
+                                    <li><a class="dropdown-item" href="./transfer.html" target="_blank">Vé máy bay</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown me-4">
+                                <a class="nav-link dropdown-toggle news-menu" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Tin tức</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="./news.html">Tin mới</a></li>
+                                    <li><a class="dropdown-item" href="./news.html">Tin tức du lịch</a></li>
+                                    <li><a class="dropdown-item" href="./news.html">Cẩm nang du lịch</a></li>
+                                    <li><a class="dropdown-item" href="./news.html">Kinh nghiệm du lịch</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="./contact.html"> Liên hệ </a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="contact-page-content">
+            <div class="container">
+                <h1 class="text-center mb-5 fw-bold">Liên Hệ Với Hoàng Nam Tourist</h1>
+
+                <div class="row g-5">
+                    <div class="col-lg-7">
+                        <h2 class="h4 mb-4">Gửi Tin Nhắn Cho Chúng Tôi</h2>
+                        <p class="mb-4">Nếu bạn có bất kỳ câu hỏi nào hoặc cần tư vấn về tour du lịch, đừng ngần ngại
+                            liên hệ với chúng tôi qua biểu mẫu dưới đây.</p>
+                        <form id="contactForm" action="your_server_script.php" method="POST">
+                            <div class="mb-3">
+                                <label for="contactName" class="form-label">Họ và Tên <span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="contactName" name="name"
+                                    placeholder="Nhập họ và tên của bạn" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactEmail" class="form-label">Địa chỉ Email <span
+                                        class="text-danger">*</span></label>
+                                <input type="email" class="form-control" id="contactEmail" name="email"
+                                    placeholder="Nhập địa chỉ email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactPhone" class="form-label">Số Điện Thoại (Tùy chọn)</label>
+                                <input type="tel" class="form-control" id="contactPhone" name="phone"
+                                    placeholder="Nhập số điện thoại">
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactSubject" class="form-label">Chủ Đề <span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="contactSubject" name="subject"
+                                    placeholder="Nhập chủ đề tin nhắn" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactMessage" class="form-label">Nội dung <span
+                                        class="text-danger">*</span></label>
+                                <textarea class="form-control" id="contactMessage" name="message" rows="5"
+                                    placeholder="Nhập nội dung tin nhắn của bạn" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fas fa-paper-plane me-2"></i> Gửi Tin Nhắn
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <h2 class="h4 mb-4">Thông Tin Liên Hệ</h2>
+                        <div class="contact-details mb-4">
+                            <p><i class="fas fa-map-marker-alt fa-fw"></i> <strong>Địa chỉ:</strong> 16 Tô Tịch, Hàng
+                                Gai, Hoàn Kiếm, Hà Nội</p>
+                            <p><i class="fas fa-phone fa-fw"></i> <strong>Điện thoại:</strong> <a
+                                    href="tel:0988220229">0988 220 229</a></p>
+                            <p><i class="fas fa-mobile-alt fa-fw"></i> <strong>Hotline:</strong> <a
+                                    href="tel:0962203566">0962 203 566</a></p>
+                            <p><i class="fas fa-headset fa-fw"></i> <strong>Tổng đài:</strong> <a
+                                    href="tel:19001530">1900 1530</a> (8:00 - 22:00)</p>
+                            <p><i class="fas fa-envelope fa-fw"></i> <strong>Email:</strong> <a
+                                    href="mailto:info@dulichhoangnam.com">info@dulichhoangnam.com</a></p>
+                        </div>
+
+                        <h2 class="h4 mb-4">Tìm Chúng Tôi Trên Bản Đồ</h2>
+                        <div class="map-container mb-4">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.128221416391!2d105.84810631540001!3d21.027711193161073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9d03370161%3A0x5eb2b87468574876!2zMTYgVMO0IFThu4tjaCwgSMOgbmcgR2FpLCBIb8OgbiBLaeG6v20sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1678886543210!5m2!1svi!2s"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+
+                        <h2 class="h4 mb-3">Kết Nối Với Chúng Tôi</h2>
+                        <ul class="socials list-inline">
+                            <li class="list-inline-item social me-2">
+                                <a href="#/" target="_blank" name="facebook" title="facebook" class="fs-4">
+                                    <img src="./assets/svg/facebook.svg" type="" width="32" height="32">
+                                </a>
+                            </li>
+                            <li class="list-inline-item social me-2">
+                                <a href="#/" target="_blank" name="instagram" title="instagram" class="fs-4">
+                                    <img src="./assets/svg/instagram.svg" type="" width="32" height="32">
+                                </a>
+                            </li>
+                            <li class="list-inline-item social me-2">
+                                <a href="#/" target="_blank" name="viber" title="viber" class="fs-4">
+                                    <img src="./assets/svg/viper.svg" type="" width="32" height="32">
+                                </a>
+                            </li>
+                            <li class="list-inline-item social me-2">
+                                <a href="#/" target="_blank" name="zalo" title="zalo" class="fs-4">
+                                    <img src="./assets/svg/zalo.svg" type="" width="32" height="32">
+                                </a>
+                            </li>
+                            <li class="list-inline-item social">
+                                <a href="#/" target="_blank" name="youtube" title="youtube" class="fs-4">
+                                    <img src="./assets/svg/youtube.svg" type="" width="32" height="32">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <section class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-6 block ">
+                            <h4>Liên hệ</h4>
+                            <div class="contact-info">
+                                16 Tô Tịch, Hàng Gai, Hoàn Kiếm, Hà Nội<br />
+                                0988220229<br />
+                                0962203566<br />
+                                info@dulichhoangnam.com
+                            </div>
+                            <h4>Mạng xã hội</h4>
+                            <ul class="socials">
+                                <li class="social">
+                                    <a href="#/" target="_blank" name="facebook" title="facebook">
+                                        <img src="./assets/svg/facebook.svg" type="">
+                                    </a>
+                                </li>
+                                <li class="social">
+                                    <a href="#/" target="_blank" name="instagram" title="instagram">
+                                        <img src="./assets/svg/instagram.svg" type="">
+                                    </a>
+                                </li>
+                                <li class="social">
+                                    <a href="#/" target="_blank" name="viber" title="viber">
+                                        <img src="./assets/svg/viper.svg" type="">
+                                    </a>
+                                </li>
+                                <li class="social">
+                                    <a href="#/" target="_blank" name="zalo" title="zalo">
+                                        <img src="./assets/svg/zalo.svg" type="">
+
+                                    </a>
+                                </li>
+                                <li class="social">
+                                    <a href="#/" target="_blank" name="youtube" title="youtube">
+                                        <img src="./assets/svg/youtube.svg" type="">
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="call-action">
+                                <a><i class="fa-regular fa-phone"></i>1900 1530</a>
+                            </div>
+                            <p>Từ 8:00 - 22:00 hàng ngày</p>
+                        </div>
+                        <div class="col-md-4 col-6 block ">
+                            <h4>Thông tin</h4>
+                            <ul class="menu">
+                                <li class="menu-item"><a href="#" target="_blank">Tạp chí sử dụng</a></li>
+                                <li class="menu-item"><a class="" href="#">Cẩm nang du lịch</a></li>
+                                <li class="menu-item"><a class="" href="#">Tin tức</a></li>
+                                <li class="menu-item"><a class="" href="#">Sitemap</a></li>
+                                <li class="menu-item"><a class="" href="#">FAQs</a></li>
+                                <li class="menu-item"><a class="" href="#">Chính sách riêng tư</a></li>
+                                <li class="menu-item"><a href="#">Thỏa thuận sử dụng</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-6 block">
+                            <h4>Chấp nhận thanh toán</h4>
+                            <img src="./assets/img/vnpay.png" width="50" height="50" loading="lazy"
+                                style="margin: 5px;" /><img src="./assets/img/visa.png" width="50" height="50"
+                                loading="lazy" style="margin: 5px;" />
+                            <img src="./assets/img/shopeepay.png" width="50" height="50" loading="lazy"
+                                style="margin: 5px;" /><img src="./assets/img/MBbank.png" width="50" height="50"
+                                loading="lazy" style="margin: 5px;" /> <br />
+                            <img src="./assets/img/vietcombank.png" width="170" height="56.67" loading="lazy"
+                                style="margin-top: 20px;" />
+
+                            <h4 style="margin-top: 40px;">Ứng dụng di động</h4>
+                            <div class="ft-app">
+                                <a target="_blank">
+                                    <img src="./assets/img/google_play.png" width="160" height="49" loading="lazy" />
+                                </a>
+                                <a target="_blank">
+                                    <img src="./assets/img/ios_play.png" width="160" height="49" loading="lazy" />
+                                </a>
+                            </div>
+                            <div class="mb-app" style="text-align: center;">
+                                <div class="android" style="margin-left: 50px;">
+                                    <p style="text-align: center;">Android</p>
+                                </div>
+                                <div class="ios" style="margin-right: 60px;">
+                                    <p>iOS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script src="./js/navigate_tourist.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menu-tab-items li').on('click', function () {
+                $('.menu-tab-items li.active').removeClass('active');
+                $(this).addClass('active');
+                var panelIndex = $(this).val();
+                $('.menu-tab-panels > div.active').removeClass('active');
+                $('.menu-tab-panels > div').eq(panelIndex - 1).addClass('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
