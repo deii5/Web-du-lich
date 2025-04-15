@@ -1,0 +1,406 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="robots" content="index, follow" />
+
+        <link rel="icon" type="image/x-icon" href="./assets/favicon/icon-beach.png">
+        <link rel="stylesheet" href="./assets/css/detailnews.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />        
+        
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/VT/font/css2.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+        
+
+        <title>Tin tức | Hoàng Nam Tourist</title>
+
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>     
+    </head>
+    <body>
+    
+        <div id="root">
+            <header class="header">
+                <nav class="navbar navbar-expand-lg fixed-top">
+                    <div class="container-fluid">
+                        <a class="navbar-brand logo" id="logoheader" href="./index.html"><img src="assets/main/logo.png" alt="logo" width="150" height="50" loading="lazy" /></a>
+                        <div class="navbar-collapse offcanvas-collapse left" id="main_nav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown me-4"><a class="nav-link" href="./index.html" role="button">Trang chủ</a></li>
+                                <li class="nav-item dropdown has-megamenu">
+                                    <a class="nav-link dropdown-toggle travel-menu" href="#" data-bs-toggle="dropdown" aria-expanded="false">Du lịch</a>
+                                    <div class="dropdown-menu megamenu" role="menu" data-bs-popper="none">
+                                        <div class="row py-lg-5">
+                                            <div class="col-2 text-center">
+                                                <ul class="list-unstyled menu-tab-items">
+                                                    <li class="active" value="1">Du lịch trong nước</li>
+                                                    <li class="" value="2">Du lịch nước ngoài</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-10 col-md-12 mx-auto">
+                                                <div class="col-lg-9 col-md-9 menu-tab-panels">
+                                                    <div class="row g-3 active text-center">
+                                                        <div class="col-lg-3 col-6">
+                                                            <div class="col-megamenu">
+                                                                <h6 class="title fw-bold text-uppercase"><a>Tour Miền Bắc</a></h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li><a href="/tour_list.html" name="29">Du lịch Hà Nội</a></li>
+                                                                    <li><a href="/tour_list.html" name="32">Du lịch Hạ Long</a></li>
+                                                                    <li><a href="/tour_list.html" name="33">Du lịch Bắc Ninh</a></li>
+                                                                    <li><a href="/tour_list.html" name="34">Du lịch Phú Thọ</a></li>
+                                                                    <li><a href="/tour_list.html" name="35">Du lịch Ninh Bình</a></li>
+                                                                    <li><a class="fw-bold">Xem tất cả</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-6">
+                                                            <div class="col-megamenu">
+                                                                <h6 class="title fw-bold text-uppercase"><a>Tour Miền Trung</a></h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li><a href="/tour_list.html" name="39">Du lịch Huế</a></li>
+                                                                    <li><a href="/tour_list.html" name="40">Du lịch Quảng Bình</a></li>
+                                                                    <li><a href="/tour_list.html" name="41">Du lịch Quảng Trị</a></li>
+                                                                    <li><a href="/tour_list.html" name="42">Du lịch Quảng Nam</a></li>
+                                                                    <li><a href="/tour_list.html" name="43">Du lịch Đà Nẵng</a></li>
+                                                                    <li><a href="/tour_list.html" name="44">Du lịch Thanh Hóa</a></li>
+
+                                                                    <li><a class="fw-bold">Xem tất cả</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-6">
+                                                            <div class="col-megamenu">
+                                                                <h6 class="title fw-bold text-uppercase"><a>Tour Miền Tây Nam Bộ</a></h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li><a href="/tour_list.html" name="54">Du lịch Phú Quốc</a></li>
+                                                                    <li><a href="/tour_list.html"  name="55">Du lịch Tiền Giang</a></li>
+                                                                    <li><a href="/tour_list.html" name="56">Du lịch Cần Thơ</a></li>
+                                                                    <li><a href="/tour_list.html" name="57">Du lịch Vĩnh Long</a></li>
+                                                                    <li><a href="/tour_list.html" name="58">Du lịch Sóc Trăng</a></li>
+                                                                    <li><a class="fw-bold">Xem tất cả</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-6">
+                                                            <div class="col-megamenu">
+                                                                <h6 class="title fw-bold text-uppercase"><a>Tour Miền Đông Nam Bộ</a></h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li><a href="/tour_list.html" name="52">Du lịch Đồng Nai</a></li>
+                                                                    <li><a href="/tour_list.html" name="53">Du lịch Bà Rịa - Vũng Tàu</a></li>
+                                                                    <li><a href="/tour_list.html" name="197">Du lịch TP. Hồ Chí Minh</a></li>
+                                                                    <li><a href="/tour_list.html" name="192">Du lịch Côn Đảo</a></li>
+                                                                    <li><a href="/tour_list.html" name="203">Du lịch Tây Ninh</a></li>
+                                                                    <li><a href="/tour_list.html" class="fw-bold">Xem tất cả</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown me-4">
+                                    <a class="nav-link dropdown-toggle transport-menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vận chuyển</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="./transfer.html" target="_blank">Thuê xe</a></li>
+                                        <li><a class="dropdown-item" href="./transfer.html" target="_blank">Vé máy bay</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown me-4">
+                                    <a class="nav-link dropdown-toggle news-menu" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tin tức</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="./news.html">Tin mới</a></li>
+                                        <li><a class="dropdown-item" href="./news.html">Tin tức du lịch</a></li>
+                                        <li><a class="dropdown-item" href="./news.html">Cẩm nang du lịch</a></li>
+                                        <li><a class="dropdown-item" href="./news.html">Kinh nghiệm du lịch</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="#"> Liên hệ </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="news">
+                <div class="container">
+                    <div class="row">
+                    <ul class="breadcrumbs__wrapper">
+                        <li>
+                            <a>
+                                <span>Du lịch</span>
+                            </a>
+                        </li>
+                        » 
+                        <li>
+                            <a>
+                                <span>Tin tức du lịch</span>
+                            </a>
+                        </li>
+                        »
+                        <li>
+                            <a>
+                                <span>8 kiến trúc đẹp lộng lẫy trong mùa hoa anh đào trên hành trình du lịch Nhật Bản</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="detail-news">
+                <section class="news_heading">
+                    <div class="container-fluid">
+                        <div class="banner-detailnews row py-lg-5">
+                            <img class="container" src="assets/img/banner-detailnews.jpg">
+                            <div class="container p-5 mb-5 text-justify">
+                                <p>Mùa xuân là thời điểm tuyệt vời để du lịch Nhật Bản. Không chỉ được chiêm ngưỡng cảnh sắc thiên nhiên rực rỡ, du khách còn có cơ hội khám phá những kiến trúc độc đáo 
+                                    hòa quyện cùng sắc hoa anh đào thơ mộng. Trong đó Fukushima là địa điểm lý tưởng để thưởng thức vẻ đẹp này. Dưới đây là 8 gợi ý cho bạn khám phá trong hành trình du 
+                                    lịch Nhật Bản ngắm hoa anh đào.
+                                   <br>
+                                   <br>
+                                    Hoa anh đào là biểu tượng và đặc trưng trong văn hóa Nhật Bản. Loại hoa này thường nở vào giữa mùa xuân từ tháng 3 đến tháng 5 hàng năm, cũng là thời điểm diễn ra 
+                                    các lễ hội ngắm hoa trên khắp cả nước, tại Takamatsu, Fukushima và các tỉnh/thành như Tokyo, Osaka hay Yamanashi cũng không ngoại lệ. Các địa điểm du lịch Nhật Bản 
+                                    có công trình kiến trúc đẹp có thể ngắm hoa anh đào luôn trong tình trạng đông khách tham quan từ khắp mọi nơi đổ về.</p>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="news-detail-fukushima">
+                    <div class="text-detail container">
+                        <h1>Fukushima</h1>
+                        <div class="row py-lg-5">
+                            <div class="col-6">
+                                <img class="container-fluid" src="assets/img/fukushima-photo-1.jpg">
+                            </div>
+                            <div class="col-6 text-justify bg-shadow">
+                                <h2><strong>Ga Yunokami Onsen</strong></h2>
+                                <p>Yunokami Onsen là công trình nhà ga duy nhất có mái tranh ở Nhật Bản. Vào cuối tháng 4, khoảng 300 cây hoa anh đào ở đây bắt đầu nở rộ xung quanh công trình nhà ga này, 
+                                    bao gồm cả các cây hoa anh đào Somei Yoshino khác nhau. Đến đây, bạn có thể vừa ngắm nhìn những cánh hoa anh đào bay trong gió, vừa có thể tận hưởng việc ngâm chân vô 
+                                    cùng khoan khoái khi chờ tàu tại nhà ga này.</p>
+                            </div>
+                        </div>
+                        <div class="row py-lg-5">
+                            <div class="col-6 text-justify bg-shadow">
+                                <h2><strong>Thành Hạc trắng Tsurugajo</strong></h2>
+                                <p>Thành Hạc trắng Tsuruga được bình chọn là một trong những địa điểm ngắm hoa anh đào đẹp nhất ở Fukushima. Tòa lâu đài kỳ vĩ này được xây dựng vào thế kỉ XV, đây là một 
+                                    trong những tòa thành cuối cùng của Samurai còn tồn tại đến ngày nay. Thành Tsurugajo trồng rất nhiều cây hoa anh đào xung quanh. Đặc biệt, vào mùa xuân, khoảng 1000 
+                                    gốc anh đào đua nhau khoe sắc khiến cho cả tòa lâu đài như được trang trí bằng những đóa hoa anh đào màu hồng, màu trắng đẹp mắt. Từ tầng 5 của tòa lâu đài, bạn có thể 
+                                    phóng tầm mắt ra xa ngắm toàn vùng Aizu, trong đó có cả núi Bandai và núi Iimoriyama. Nếu đứng trong khuôn viên hoa lệ của tòa lâu đài này, bạn sẽ cảm thấy như mình đang 
+                                    đứng giữa lòng trời xuân. Thành Hạc trắng Tsurugajo là địa điểm du lịch Nhật Bản mang đến cho bạn cơ hội được tìm hiểu lịch sử, văn hóa, truyền thống và thiên nhiên của 
+                                    tỉnh Fukushima bằng tất cả giác quan của mình.</p>
+                            </div>
+                            <div class="col-6">
+                                <img class="container-fluid" src="assets/img/fukushima-photo-2.jpg">
+                            </div>
+                        </div>
+                        <div class="row py-lg-5">
+                            <div class="col-6">
+                                <img class="container-fluid" src="assets/img/fukushima-photo-3.jpg">
+                            </div>
+                            <div class="col-6 text-justify bg-shadow">
+                                <h2><strong>Dinh thự của các Samurai</strong></h2>
+                                <p>Với vị trí rất gần Thành Hạc trắng Tsurugajo, chỉ mất khoảng 5 phút di chuyển, một trong những địa điểm ngắm hoa anh đào đẹp nhất ở Fukushima – Dinh thự Samurai là một cơ 
+                                    sở du lịch mô phỏng lại dinh thự samurai của lãnh chúa vùng Aizu vào thời Edo. Đây là nơi vô cùng lý tưởng để bạn có thể cảm nhận cuộc sống của các samurai trước đây, và 
+                                    cũng như trải nghiệm mặc thử các trang phục truyền thống của người Nhật Bản để chụp những bức ảnh dưới tán cây hoa anh đào rung rinh trong gió.</p>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </section>
+
+                <section class="news-detail-takamatsu">
+                    <div class="text-detail container">
+                        <h1>Takamatsu</h1>
+                        <div class="row py-lg-5">
+                            <div class="noi-dung-detail col-6 text-justify bg-shadow">
+                                <h2><strong>Công viên Tamamo</strong></h2>
+                                <p>Một trong những điểm đến ở Takamatsu nổi tiếng không kém Ritsurin là công viên Tamamo, được tu sửa lại từ đống đổ nát của lâu đài Takamatsu và đã được công nhận là một 
+                                    di tích lịch sử quốc gia. Tại công viên này có một cái hào đặt trong tòa nhà nuôi những con cá biển như: cá tráp, cá bơn bơi lội rất thư thản, nơi đã được chỉ định 
+                                    là tài sản văn hóa quan trọng.</p>
+                            </div>
+                            <div class="col-6">
+                                <img class="container-fluid" src="assets/img/takamatsu-photo-1.jpg">
+                            </div>
+                        </div>
+                        <div class="row py-lg-5">
+                            <div class="col-6">
+                                <img class="container-fluid" src="assets/img/takamatsu-photo-2.jpg">
+                            </div>
+                            <div class="noi-dung-detail col-6 text-justify bg-shadow">
+                                <p>Các bạn có thể tận hưởng trải nghiệm cho cá ăn và ngắm hoa anh đào tại đây. Trong mùa ngắm hoa anh đào, Sakura-no-Baba mở cửa miễn phí cho công chúng vào ban đêm, khiến 
+                                    nơi đây trở thành địa điểm thư giãn phổ biến cho người dân.</p>
+                            </div>
+                        </div>
+                        <div class="row py-lg-5">
+                            <div class="noi-dung-detail col-6 text-justify bg-shadow">
+                                <h2><strong>Lâu đài Takamatsu</strong></h2>
+                                <p>Lâu đài cổ kính này được bao quanh bởi những con hào và khu vườn rộng lớn, nơi hoa anh đào nở rộ vào mùa xuân. Bạn có thể đi dạo dọc theo con hào, leo lên đỉnh lâu đài 
+                                    để ngắm nhìn toàn cảnh thành phố Takamatsu và thưởng thức vẻ đẹp của hoa anh đào. Những hàng cây anh đào cổ thụ xòe tán lớn, phủ kín hoa anh đào, tạo nên cảnh sắc 
+                                    choáng ngợp đẹp như cổ tích.</p>
+                            </div>
+                            <div class="col-6">
+                                <img class="container-fluid" src="assets/img/takamatsu-photo-3.jpg">
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </section>
+
+                <section class="news-detail-tokyo-osaka-yamanashi">
+                    <div class="text-detail container">
+                        <h1>Tokyo - Osaka - Yamanashi</h1>
+                        <div class="row py-lg-5">
+                            <div class="col-6">
+                                <img class="container-fluid" src="assets/img/tokyo-photo-1.jpg">
+                            </div>
+                            <div class="noi-dung-detail col-6 text-justify bg-shadow">
+                                <h2><strong>Lâu đài OSAKA</strong></h2>
+                                <p>Lâu đài Osaka, một trong 10 lâu đài đẹp nhất của Nhật Bản, đặt tại thành phố Osaka, Nhật Bản, là biểu tượng văn hóa quan trọng và lịch sử của khu vực. 
+                                    Được xây dựng vào cuối thế kỷ 16 trong thời kỳ Azuchi-Momoyama, lâu đài này đóng vai trò quan trọng trong việc thống nhất đất nước. Có kiến trúc ấn tượng, 
+                                    lâu đài được xây trên 2 bệ đá cao và tựa vào 2 bức tường đứng, với 5 tầng bên ngoài và 8 tầng bên trong. Mái ngói truyền thống và hệ thống hào, bức tường đá, 
+                                    cổng và thành lũy tạo nên một khung cảnh ấn tượng.
+                                    Mùa xuân, lâu đài Osaka mang lại vẻ đẹp lãng mạn với cánh hoa anh đào nở rộ khắp khu vực. Màu hồng của hoa tương phản nổi bật với kiến trúc cổ kính của lâu đài, 
+                                    tạo ra một không gian thơ mộng và lịch sự. Đến đây, bạn còn có cơ hội tham quan vườn Nishinomaru với hàng trăm gốc hoa anh đào, đặc biệt là loài Somei Yoshino, 
+                                    phổ biến nhất. Không chỉ là một biểu tượng của lịch sử và văn hóa, lâu đài Osaka còn là điểm đến tuyệt vời để ngắm nhìn vẻ đẹp của hoa anh đào trong mùa xuân tại xứ sở Phù Tang.</p>
+                            </div>
+                        </div>
+                        <div class="row py-lg-5">
+                            <div class="noi-dung-detail col-6 text-justify bg-shadow">
+                                <h2><strong>Làng cổ Oshino Hakkai</strong></h2>
+                                <p>Nằm bên chân núi phía tây của tỉnh Yamanashi, làng cổ Oshino Hakkai mang đậm dấu ấn kiến trúc truyền thống Nhật Bản, hòa quyện với khung cảnh thanh bình và tuyệt đẹp. 
+                                    Những hồ lớn trong làng được trang trí bởi những chiếc cầu đẹp mắt, tạo nên một phong cảnh độc đáo và hấp dẫn. Đặc biệt, làng cổ Oshino Hakkai là điểm ngắm nhìn tốt 
+                                    nhất để chiêm ngưỡng toàn cảnh vùng đất này. Các guồng quay nước gỗ trên hồ thêm phần sinh động cho không gian xung quanh.Mùa xuân là thời điểm lý tưởng để khám phá 
+                                    làng cổ Oshino Hakkai. Khi những cánh đồng hoa anh đào bắt đầu nở rộ, làng trở thành một bức tranh sống động với sắc hồng quyến rũ. Du khách có thể tản bộ qua các 
+                                    con đường dẫn qua vườn hoa và tận hưởng vẻ đẹp tự nhiên tuyệt vời của đồng cỏ xanh mướt và dòng suối trong lành. Điều đặc biệt là từ làng cổ Oshino Hakkai, bạn có 
+                                    thể ngắm nhìn toàn bộ Núi Phú Sĩ - biểu tượng văn hóa của Nhật Bản, với đỉnh trắng xóa và hình dáng đặc trưng.</p>
+                            </div>
+                            <div class="col-6">
+                                <img class="container-fluid" src="assets/img/tokyo-photo-2.jpg">
+                            </div>
+                        </div>
+                        <div class="row py-lg-5">
+                            <div class="col-6">
+                                <img class="container-fluid" src="assets/img/tokyo-photo-3.jpg">
+                            </div>
+                            <div class="noi-dung-detail col-6 text-justify bg-shadow">
+                                <h2><strong>Đền Yasukuni (Kudanshita)</strong></h2>
+                                <p>Trong khuôn viên đền Yasukuni ở Tokyo, có khoảng 500 cây anh đào được trồng, tạo nên một khung cảnh đẹp mê hồn không kém gì đền Meiji. Mặc dù được xây dựng vào năm 1869, 
+                                    đền Yasukuni vẫn toát lên vẻ đẹp cổ kính và thanh nhã của kiến trúc kiểu Nhật. Sự hòa quyện giữa lối kiến trúc truyền thống và vẻ đẹp của hoa anh đào tạo nên một không 
+                                    gian lãng mạn, khiến du khách cảm thấy như được trở về quá khứ trong không gian yên bình của đền. Vào mùa hoa anh đào, khuôn viên đền còn mở những quầy bán đồ ăn để 
+                                    phục vụ du khách ngắm hoa. Vị trí của đền gần Hoàng cung, giúp du khách tiết kiệm thời gian di chuyển khi muốn tận hưởng vẻ đẹp của hoa anh đào tại cả hai địa điểm.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <div class="container p-5 mb-5 text-justify">
+                    <p>Ngoài 8 địa điểm trên, bạn có thể tham khảo thêm một số địa điểm ngắm hoa anh đào khác ở Takamatsu và Fukushima như: Vườn Ritsurin-koen ở Takamatsu hoặc Công viên Hanamiyama ở Fukushima...
+                       <br>
+                       <br>
+                       Người ta thường nói, mùa xuân du lịch Nhật Bản ngắm hoa anh đào mà không đến Fukushima hay Takamatsu cũng giống như bỏ lỡ một mảnh tình ở xứ sở kỳ diệu này, nhất là ngắm hoa tại các công 
+                       trình kiến trúc đẹp mắt ở đây. Vậy nên hãy lên kế hoạch du lịch Takamatsu và Fukushima ngay hôm nay để tận hưởng mùa hoa anh đào đẹp lộng lẫy bạn nhé!</p>
+                    <hr>
+                </div>
+            </div>
+
+            <footer>
+                <section class="footer-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 col-6 block ">
+                                <h4>Liên hệ</h4>
+                                <div class="contact-info">
+                                    16 Tô Tịch, Hàng Gai, Hoàn Kiếm, Hà Nội<br />
+                                    0988220229<br />
+                                    0962203566<br />
+                                    info@dulichhoangnam.com
+                                </div>
+                                <h4>Mạng xã hội</h4>
+                                <ul class="socials">
+                                    <li class="social">
+                                        <a href="#/" target="_blank" name="facebook" title="facebook">
+                                            <img src="./assets/svg/facebook.svg" type="">
+                                        </a>
+                                    </li>
+                                    <li class="social">
+                                        <a href="#/" target="_blank" name="instagram" title="instagram">
+                                            <img src="./assets/svg/instagram.svg" type="">
+                                        </a>
+                                    </li>
+                                    <li class="social">
+                                        <a href="#/" target="_blank" name="viber" title="viber">
+                                            <img src="./assets/svg/viper.svg" type="">
+                                        </a>
+                                    </li>
+                                    <li class="social">
+                                        <a href="#/" target="_blank" name="zalo" title="zalo">
+                                            <img src="./assets/svg/zalo.svg" type="">
+                                                
+                                        </a>
+                                    </li>
+                                    <li class="social">
+                                        <a href="#/" target="_blank" name="youtube" title="youtube">
+                                            <img src="./assets/svg/youtube.svg" type="">
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="call-action">
+                                    <a><i class="fa-regular fa-phone"></i>1900 1530</a>
+                                </div>
+                                <p>Từ 8:00 - 22:00 hàng ngày</p>
+                            </div>
+                            <div class="col-md-4 col-6 block ">
+                                <h4>Thông tin</h4>
+                                <ul class="menu">
+                                    <li class="menu-item"><a href="#" target="_blank">Tạp chí sử dụng</a></li>
+                                    <li class="menu-item"><a class="" href="#">Cẩm nang du lịch</a></li>
+                                    <li class="menu-item"><a class="" href="#">Tin tức</a></li>
+                                    <li class="menu-item"><a class="" href="#">Sitemap</a></li>
+                                    <li class="menu-item"><a class="" href="#">FAQs</a></li>
+                                    <li class="menu-item"><a class="" href="#">Chính sách riêng tư</a></li>
+                                    <li class="menu-item"><a href="#">Thỏa thuận sử dụng</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-6 block">
+                                <h4>Chấp nhận thanh toán</h4>
+                                <img src="./assets/img/vnpay.png" width="50" height="50" loading="lazy" style="margin: 5px;" /><img src="./assets/img/visa.png" width="50" height="50" loading="lazy" style="margin: 5px;" />
+                                <img src="./assets/img/shopeepay.png" width="50" height="50" loading="lazy" style="margin: 5px;" /><img src="./assets/img/MBbank.png" width="50" height="50" loading="lazy" style="margin: 5px;" /> <br />
+                                <img src="./assets/img/vietcombank.png" width="170" height="56.67" loading="lazy" style="margin-top: 20px;" />
+                                
+                                <h4 style="margin-top: 40px;">Ứng dụng di động</h4>
+                                <div class="ft-app">
+                                    <a target="_blank">
+                                        <img src="./assets/img/google_play.png"  width="160" height="49" loading="lazy" />
+                                    </a>
+                                    <a target="_blank">
+                                        <img src="./assets/img/ios_play.png"  width="160" height="49" loading="lazy" />
+                                    </a>
+                                </div>
+                                <div class="mb-app" style="text-align: center;">
+                                    <div class="android" style="margin-left: 50px;">
+                                        <p style="text-align: center;">Android</p>
+                                    </div>
+                                    <div class="ios" style="margin-right: 60px;">
+                                        <p>iOS</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+           
+                
+            </footer>
+        </div>    
+    </body>
+    <script src="./js/navigate_tourist.js"></script>
+</html>
