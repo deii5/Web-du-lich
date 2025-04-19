@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta name="robots" content="index, follow" />
@@ -57,6 +56,10 @@
                 <div class="container-fluid">
                     <a class="navbar-brand logo" id="logoheader" href="./index.html"><img src="assets/main/logo.png"
                             alt="logo" width="150" height="50" loading="lazy" /></a>
+                            <button class="navbar-toggler" type="button">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>                          
+                              
                     <div class="navbar-collapse offcanvas-collapse left" id="main_nav">
                         <ul class="navbar-nav">
                             <li class="nav-item dropdown me-4"><a class="nav-link" href="./index.html"
@@ -248,7 +251,7 @@
                                         <span class="minus btn-click" id="adultMinus">
                                             <i class="fa-light fa-circle-minus"></i>
                                         </span>
-                                        <input type="text" class="number" id="adult" value="0">
+                                        <input type="text" class="number" id="adult" placeholder="0">
                                         <span class="plus btn-click">
                                             <i class="fal fa-plus-circle" id="adultPlus"></i>
                                         </span>
@@ -263,7 +266,7 @@
                                         <span class="minus btn-click">
                                             <i class="fal fa-minus-circle" id="childrenMinus"></i>
                                         </span>
-                                        <input type="text" class="number" id="children" value="0">
+                                        <input type="text" class="number" id="children" placeholder="0">
                                         <span class="plus btn-click">
                                             <i class="fal fa-plus-circle" id="childrenPlus"></i>
                                         </span>
@@ -278,7 +281,7 @@
                                         <span class="minus btn-click">
                                             <i class="fal fa-minus-circle" id="smallchildrenMinus"></i>
                                         </span>
-                                        <input type="text" class="number" id="smallchildren" value="0">
+                                        <input type="text" class="number" id="smallchildren" placeholder="0">
                                         <span class="plus btn-click">
                                             <i class="fal fa-plus-circle" id="smallchildrenPlus"></i></span>
                                     </div>
@@ -292,7 +295,7 @@
                                         <span class="minus btn-click">
                                             <i class="fal fa-minus-circle" id="babyMinus"></i>
                                         </span>
-                                        <input type="text" class="number" id="baby" value="0">
+                                        <input type="text" class="number" id="baby" placeholder="0">
                                         <span class="plus btn-click">
                                             <i class="fal fa-plus-circle" id="babyPlus"></i>
                                         </span>
@@ -623,6 +626,18 @@
     </div>
     <script src="./js/navigate_tourist.js"></script>
     <script src="./js/booking.js"></script>
+    <script>
+        document.querySelector('.navbar-toggler').addEventListener('click', function () {
+            document.querySelector('.offcanvas-collapse').classList.toggle('open');
+        });
+    </script>
+    <script>
+        document.querySelector('.navbar-toggler').addEventListener('click', function () {
+            document.querySelector('.offcanvas-collapse').classList.toggle('open');
+        });
+    </script>
+    
+    
 </body>
 
 
